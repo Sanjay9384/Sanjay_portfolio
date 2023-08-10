@@ -1,0 +1,148 @@
+.home {
+    position: relative;
+    top: 75px;
+    min-height: calc(110vh - 75px);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(224, 219, 219, 0.936);
+}
+
+.home-content-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    width: 70px;
+    padding: 10px;
+}
+
+.socialmedia-icons {
+    list-style: none;
+    padding: 10px;
+}
+
+.fa {
+    padding: 10px;
+}
+
+.socialmedia-icons:hover {
+    background-color: #d9c2f0;
+    opacity: 0.9;
+}
+
+.socialmedia-icons a {
+    display: block;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.home-content {
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+}
+
+.home-content-h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.home-content-p {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.home-content-button {
+    background-color: #a70fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+}
+
+.home-content-button:hover {
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+.home-gif {
+    margin-top: 50px;
+    cursor: crosshair;
+    display: inline-block;
+}
+
+.home-gif-img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 910px) {
+
+    .home-content-h1 {
+        font-size: 50px;
+    }
+
+    .home-content-p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .home-content-button {
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    
+    .home-content {
+        left: 0;
+    }
+
+    .home-content-h1 {
+        font-size: 40px;
+    }
+
+    .home-content-p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .home-content-button {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .home-content-icon {
+        display: none;
+    }
+
+    .home-gif {
+        margin-top: 40px;
+        cursor: crosshair;
+        display: inline-block;
+    }
+
+    .home-gif-img {
+        width: 80px;
+        height: 80px;
+    }
+}

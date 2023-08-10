@@ -1,0 +1,157 @@
+/* HEADER STYLES  */
+
+/* HEADER LEFT */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: all 0.10s ease-in-out;
+}
+
+.header-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.logo-container {
+    margin-right: 10px;
+}
+
+.header-left span {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.header-left:hover {
+    color: #A70FFF;
+}
+
+
+/* HEADER RIGHT */
+
+.header-right {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header-list {
+
+    display: flex;
+    align-items: center;
+}
+
+.header-list-items {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.list-items-a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.list-items-a:hover {
+    color: #A70FFF ;
+}
+
+.menubar {
+    width: 15px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        background-color: #333333;
+        position: fixed;
+    }
+
+    .header-left {
+        margin-left: 20px;
+    }
+
+    .header-right {
+        margin-right: 5px;
+    }
+
+    .header-left,
+    .header-right {
+        text-align: center;
+    }
+
+    .logo-container a {
+        text-decoration: none;
+    }
+
+    .logo-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-left span {
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+    .header-list {
+        position: fixed;
+        top: 7.4rem;
+        left: 10rem;
+        background-color: #333333;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 10;
+        transition: 0.3s;
+        gap: 10rem;
+        left: -100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menubar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    .showMenu {
+        left: 0;
+    }
+
+    .showMenu li {
+        margin-bottom: -50px;
+    }
+
+    .list-items-a {
+        font-size: 15px;
+    }
+}
